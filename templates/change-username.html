@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/change-username" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="old-username" placeholder="Old username" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="new-username" placeholder="New username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Change username</button>
+    </form>
+{% endblock %}
